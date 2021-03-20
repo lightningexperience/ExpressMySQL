@@ -3,12 +3,12 @@ const dotenv = require('dotenv');
 let instance = null;
 dotenv.config();
 
-const connection = mysql.createConnection({
-    host: process.env.HOST,
-    user: process.env.USER,
-    password: process.env.PASSWORD,
-    database: process.env.DATABASE,
-    port: process.env.DB_PORT
+//Create connection
+const cconnection = mysql.createConnection({
+  host: 'g84t6zfpijzwx08q.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+  user: 'hdv446tqkzq87cwp',
+  password: 'gthj9ubjn4smm4o1',
+  database: 'boe5w5nmw6dixoiq'
 });
 
 connection.connect((err) => {
